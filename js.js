@@ -59,10 +59,7 @@ function getListOfCategory(){
 
 function selectCategory(){
   let selected = document.getElementById("categoryList").value
-  console.log(selected)
   let url = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=" + selected
-  console.log(url)
-
   xhttp = new XMLHttpRequest();
   xhttp.open("GET", url);
 
