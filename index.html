@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js.js"></script>
+    <script src="jsWithFetch.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="css.css">
@@ -16,8 +17,9 @@
     <title>Document</title>
 </head>
 
-<body onload="start()">
+<body onload="startFetch()">
     <button onclick="selectCategory()">Get New Drink</button>
+    <button onclick="randomDrinkWithFetch()">Get New Drink with fetch</button>
     <select class="custom-select" id="categoryList" onchange="selectCategory()"></select>
     <div class="container">
         <div class="row">
